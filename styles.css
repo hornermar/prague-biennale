@@ -1,0 +1,39 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: white;
+  font-family: Arial, sans-serif;
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  text-align: center;
+}
+
+.logo {
+  position: absolute;
+  top: 10px;
+  left: 16px;
+  width: 300px;
+  max-width: 400px;
+}
+
+.message {
+  font-size: 1.2rem;
+  color: black;
+  max-width: 90%;
+  word-wrap: break-word;
+  text-align: center;
+}
+
+@media (max-width: 600px) {
+  .logo {
+    width: 100vw;
+  }
+}
